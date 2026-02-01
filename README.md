@@ -5,9 +5,10 @@
 
 <br/>
 
-<!-- GitHub Stats -->
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=LeekJay&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b26&title_color=7aa2f7&icon_color=9ece6a&text_color=a9b1d6&include_all_commits=true&count_private=true"/>
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LeekJay&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b26&title_color=7aa2f7&text_color=a9b1d6&langs_count=6"/>
+<!-- GitHub Badges -->
+<img src="https://img.shields.io/github/followers/LeekJay?style=for-the-badge&color=7aa2f7&labelColor=1a1b26" />
+<img src="https://img.shields.io/github/stars/LeekJay?style=for-the-badge&color=9ece6a&labelColor=1a1b26" />
+<img src="https://img.shields.io/github/repos/LeekJay?style=for-the-badge&color=bb9af7&labelColor=1a1b26" />
 
 <br/>
 
