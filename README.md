@@ -8,7 +8,7 @@
 <!-- GitHub Badges -->
 <img src="https://img.shields.io/github/followers/LeekJay?style=for-the-badge&color=7aa2f7&labelColor=1a1b26" />
 <img src="https://img.shields.io/github/stars/LeekJay?style=for-the-badge&color=9ece6a&labelColor=1a1b26" />
-<img src="https://img.shields.io/github/repos/LeekJay?style=for-the-badge&color=bb9af7&labelColor=1a1b26" />
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FLeekJay&query=%24.public_repos&label=REPOS&style=for-the-badge&color=bb9af7&labelColor=1a1b26" />
 
 <br/>
 
