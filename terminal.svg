@@ -1,0 +1,118 @@
+<svg width="800" height="380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1b26"/>
+      <stop offset="100%" style="stop-color:#16161e"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#24283b"/>
+      <stop offset="100%" style="stop-color:#1f2335"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+    <style>
+      .terminal-text { font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace; font-size: 13px; }
+      .prompt { fill: #9ece6a; }
+      .command { fill: #7aa2f7; }
+      .text { fill: #a9b1d6; }
+      .muted { fill: #565f89; }
+      .highlight { fill: #bb9af7; }
+      .info { fill: #7dcfff; }
+      .cursor { fill: #c0caf5; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .cursor { animation: blink 1s infinite; }
+    </style>
+  </defs>
+  
+  <!-- Window Shadow -->
+  <rect x="10" y="10" width="780" height="360" rx="10" fill="#1a1b26" filter="url(#shadow)"/>
+  
+  <!-- Window Background -->
+  <rect x="10" y="10" width="780" height="360" rx="10" fill="url(#bgGrad)"/>
+  
+  <!-- Header -->
+  <rect x="10" y="10" width="780" height="40" rx="10" fill="url(#headerGrad)"/>
+  <rect x="10" y="40" width="780" height="10" fill="url(#headerGrad)"/>
+  
+  <!-- Header Border -->
+  <line x1="10" y1="50" x2="790" y2="50" stroke="#292e42" stroke-width="1"/>
+  
+  <!-- Traffic Lights -->
+  <circle cx="35" cy="30" r="6" fill="#f7768e"/>
+  <circle cx="55" cy="30" r="6" fill="#e0af68"/>
+  <circle cx="75" cy="30" r="6" fill="#9ece6a"/>
+  
+  <!-- Title -->
+  <text x="400" y="34" text-anchor="middle" class="terminal-text" fill="#565f89">leekjay@dev — zsh</text>
+  
+  <!-- Terminal Content -->
+  <g transform="translate(30, 75)">
+    <!-- Line 1: whoami -->
+    <text y="0" class="terminal-text">
+      <tspan class="prompt">❯</tspan>
+      <tspan class="command"> whoami</tspan>
+    </text>
+    <text y="20" class="terminal-text">
+      <tspan class="text">LeekJay</tspan>
+      <tspan class="muted"> // Full-Stack Developer &amp; AI Enthusiast</tspan>
+    </text>
+    
+    <!-- Line 2: cat about.json -->
+    <text y="50" class="terminal-text">
+      <tspan class="prompt">❯</tspan>
+      <tspan class="command"> cat about.json</tspan>
+    </text>
+    <text y="70" class="terminal-text text">{</text>
+    <text y="90" class="terminal-text">
+      <tspan class="text">  </tspan>
+      <tspan class="info">"location"</tspan>
+      <tspan class="text">: </tspan>
+      <tspan class="highlight">"China 🇨🇳"</tspan>
+      <tspan class="text">,</tspan>
+    </text>
+    <text y="110" class="terminal-text">
+      <tspan class="text">  </tspan>
+      <tspan class="info">"role"</tspan>
+      <tspan class="text">: </tspan>
+      <tspan class="highlight">"Full-Stack &amp; Automation Engineer"</tspan>
+      <tspan class="text">,</tspan>
+    </text>
+    <text y="130" class="terminal-text">
+      <tspan class="text">  </tspan>
+      <tspan class="info">"focus"</tspan>
+      <tspan class="text">: [</tspan>
+      <tspan class="highlight">"AI Integration"</tspan>
+      <tspan class="text">, </tspan>
+      <tspan class="highlight">"Efficiency Tools"</tspan>
+      <tspan class="text">],</tspan>
+    </text>
+    <text y="150" class="terminal-text">
+      <tspan class="text">  </tspan>
+      <tspan class="info">"philosophy"</tspan>
+      <tspan class="text">: </tspan>
+      <tspan class="highlight">"让重复的工作消失"</tspan>
+    </text>
+    <text y="170" class="terminal-text text">}</text>
+    
+    <!-- Line 3: ls skills -->
+    <text y="200" class="terminal-text">
+      <tspan class="prompt">❯</tspan>
+      <tspan class="command"> ls skills/</tspan>
+    </text>
+    <text y="220" class="terminal-text info">TypeScript  Python  Vue.js  React  Node.js  FastAPI  Docker  OpenAI  Claude</text>
+    
+    <!-- Line 4: contact -->
+    <text y="250" class="terminal-text">
+      <tspan class="prompt">❯</tspan>
+      <tspan class="command"> echo $CONTACT</tspan>
+    </text>
+    <text y="270" class="terminal-text text">📧 leekjay@foxmail.com   🐙 github.com/LeekJay</text>
+    
+    <!-- Cursor -->
+    <text y="300" class="terminal-text">
+      <tspan class="prompt">❯</tspan>
+      <tspan class="cursor"> █</tspan>
+    </text>
+  </g>
+</svg>
